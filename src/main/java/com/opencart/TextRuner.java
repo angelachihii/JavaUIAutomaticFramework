@@ -49,12 +49,12 @@ public class TextRuner {
         phoneInput.sendKeys("phoneNumber");
      System.out.println("phoneNumber");
 
-        WebElement paswordInput = driver.findElement(By.cssSelector("#input-password"));
-        String pasword = RandomDataManager.generatePasword();
-        paswordInput.sendKeys( pasword);
+        WebElement passwordInput = driver.findElement(By.cssSelector("#input-password"));
+        String password = RandomDataManager.generatePasword();
+        passwordInput.sendKeys( password);
 
         WebElement conffirnPaswordInput = driver.findElement(By.cssSelector("#input-confirm"));
-        conffirnPaswordInput.sendKeys(pasword);
+        conffirnPaswordInput.sendKeys(password);
 
         WebElement termsAndConditions = driver.findElement(By.cssSelector("div[id='information-information'] li:nth-child(1) a:nth-child(1)"));
         termsAndConditions.click();
