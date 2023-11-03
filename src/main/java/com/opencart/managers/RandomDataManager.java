@@ -9,19 +9,20 @@ public class RandomDataManager {
   return prefix + randomMidPart + sufix;
 
     }
-    public static String generateRandomEmail () {
+    public static String generateRandomEmail ()
+    {
+
         return fakerObject.internet().emailAddress();
     }
-    public static String generateFirstName(){
+    public static String generateRandomFirstName(){
+
         return  fakerObject.name().firstName();
     }
-    public static String generateLastName(){
+    public static String generateRandomLastName(){
+
         return fakerObject.name().lastName();
     }
-    public static String generatePhoneNumber(){
-        return  fakerObject.phoneNumber().phoneNumber();
-    }
-    public  static String generatePasword(){
+    public  static String generateRandomPassword(){
         return fakerObject.internet().password();
 
     }
