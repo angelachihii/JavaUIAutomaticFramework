@@ -10,12 +10,12 @@ public class Page {
     public Page(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[normalize-space()='My Account']")
     protected WebElement myAccountIcon;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//a[normalize-space()='Register']")
     protected WebElement registerBtn;
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//a[normalize-space()='Login']")
     protected WebElement loginBtn;
 
     protected Page(){

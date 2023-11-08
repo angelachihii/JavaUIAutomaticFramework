@@ -10,19 +10,19 @@ public class RegisterPage extends Page {
 public RegisterPage(WebDriver driver){
     super();
 }
-@FindBy (id = "input-firstname")
+@FindBy (id = "//input[@id='input-firstname']")
     private WebElement firstNameInput;
-@FindBy(id = "input-lastname")
+@FindBy(id = "//input[@id='input-lastname']")
     private  WebElement lastNameInput;
-@FindBy(id = "input-email")
+@FindBy(id = "//input[@id='input-email']")
     private WebElement emailInput;
-@FindBy(id = "input-password")
+@FindBy(id = "//input[@id='input-password']")
     private WebElement passwordInput;
 
-@FindBy(css = "input[name='agree;]")
+@FindBy(css = "input[value='1'][name='agree']")
 private WebElement getPrivacyToggle;
 
-@FindBy(xpath = "//button[normalize-space()='Continue]")
+@FindBy(xpath = "//button[normalize-space()='Continue']")
     private WebElement continueButton;
 
 public void  fillInTheRegisterFrom(String firstName,String lastName, String email,String password){
@@ -46,5 +46,8 @@ public void  fillInTheRegisterFrom(String firstName,String lastName, String emai
 }
 
     public void clickOnContinueButton() {
+    }
+
+    public void switchOnThePrivacyToogle(WebDriver driver) {
     }
 }

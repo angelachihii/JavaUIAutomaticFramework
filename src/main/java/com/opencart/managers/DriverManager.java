@@ -41,5 +41,13 @@ public  WebDriver getDriver(){
     return driver;
 }
 
+public void quiteTheDriver(){
+    driver.quit();
+    driver=null;
+    instance = null;
+    System.out.println("The bowser is closed and session is set to null");
+}
 
+    public void tearDown() {
+    }
 }
